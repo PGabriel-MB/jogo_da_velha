@@ -41,7 +41,8 @@ $(document).ready(function(){
 
     $('.jogada ').click( function(){
         var id_clickedArea = this.id;
-        jogada(id_clickedArea)
+        $('#'+id_clickedArea).off();
+        jogada(id_clickedArea);
     });
 
     function jogada( id){
